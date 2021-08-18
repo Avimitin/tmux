@@ -18,8 +18,8 @@ cp tmux/.tmux.conf ~/
 
 ```text
 * prefix:                <Ctrl-a>
-* next window:           <prefix><Ctrl-l>
-* previous window:       <prefix><Ctrl-h>
+* next window:           <Ctrl-Right>
+* previous window:       <Ctrl-Left>
 * move next:             <prefix>l
 * move previous:         <prefix>h
 * move up:               <prefix>k
