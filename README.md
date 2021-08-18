@@ -1,8 +1,18 @@
 # tmux
 
-## preview
-
 https://user-images.githubusercontent.com/30021675/129849421-e7166224-3e46-42c9-8a61-567b99b3b772.mp4
+
+## Install
+
+First of all, you need a nerd font for full icon:
+[nerd font](https://nerdfonts.com/) 
+
+Then clone the repo and copy the config file to your home path.
+
+```bash
+git clone https://github.com/Avimitin/tmux
+cp tmux/.tmux.conf ~/
+```
 
 ## Keys
 
