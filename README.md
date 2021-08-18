@@ -1,6 +1,6 @@
 # tmux
 
-https://user-images.githubusercontent.com/30021675/129849421-e7166224-3e46-42c9-8a61-567b99b3b772.mp4
+![screenshot](./tmux-screenshot.png)
 
 ## Install
 
