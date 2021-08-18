@@ -21,6 +21,12 @@ https://user-images.githubusercontent.com/30021675/129849421-e7166224-3e46-42c9-
 * copy mode:             <prefix>Enter
 ```
 
+## Configure
+
+Changed the icon and color you prefer here:
+
+![image](./tmux-configure.png) 
+
 ## Credit
 
 Keymap is copied from
