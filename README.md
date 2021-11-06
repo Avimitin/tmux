@@ -1,17 +1,23 @@
 # tmux
 
+*Default theme*
 ![screenshot](./tmux-screenshot.png)
+
+*Nord theme*
+![screenshot](./tmux-nord.png)
 
 ## Install
 
-First of all, you need a nerd font for full icon:
-[nerd font](https://nerdfonts.com/) 
+First of all, you need a nerd font for icons:
+[nerd font](https://nerdfonts.com/)
 
 Then clone the repo and copy the config file to your home path.
 
 ```bash
 git clone https://github.com/Avimitin/tmux
 cp tmux/.tmux.conf ~/
+# if you want the Nord Theme
+cp tmux/.tmux.conf.nord ~/.tmux.conf
 ```
 
 ## Keys
@@ -30,12 +36,6 @@ cp tmux/.tmux.conf ~/
 * toggle mouse:          <prefix>m
 * copy mode:             <prefix>Enter
 ```
-
-## Configure
-
-Changed the icon and color you prefer here:
-
-![image](./tmux-configure.png) 
 
 ## Credit
 
