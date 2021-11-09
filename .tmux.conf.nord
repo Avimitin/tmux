@@ -5,6 +5,7 @@ set -g prefix C-a
 bind C-a send-prefix
 
 set -g default-terminal "screen-256color"
+set -ga terminal-overrides ",*256col*:Tc"
 setw -g xterm-keys on
 set -s escape-time 10
 set -sg repeat-time 200
