@@ -35,8 +35,11 @@ bind r source-file ~/.tmux.conf \; display '~/.tmux.conf sourced'
 # -- basic -- #
 # Name convention is from: https://www.nordtheme.com/docs/colors-and-palettes
 TMUX_NORD_1="#2E3440"
+TMUX_NORD_2="#3b4252"
 TMUX_NORD_3="#4C566A"
+TMUX_NORD_4="#d8dee9"
 TMUX_NORD_8="#88C0D0"
+TMUX_NORD_10="#5e81ac"
 
 set -g status-bg "$TMUX_NORD_1"
 set -g status-fg "$TMUX_NORD_8"
@@ -47,14 +50,15 @@ set -g status-left-length 33
 
 set -g window-status-format "#I #W"
 set -g window-status-current-format "\
-#[bg=$TMUX_NORD_1,fg=$TMUX_NORD_3]\
-#[bg=$TMUX_NORD_3,fg=default]#I #W\
+#[bg=$TMUX_NORD_1,fg=$TMUX_NORD_10,bold]\
+#[bg=$TMUX_NORD_10,fg=$TMUX_NORD_4]#I \
+#[bg=$TMUX_NORD_3,fg=default] #W\
 #[bg=$TMUX_NORD_1,fg=$TMUX_NORD_3]"
 
 set -g window-status-bell-style bg=default,fg=default,underscore
 set -g window-status-activity-style bg=default,fg=default,underscore
 
-TMUX_LEFT_ICON="#[bg=$TMUX_NORD_3,fg=$TMUX_NORD_8] "
+TMUX_LEFT_ICON="#[bg=$TMUX_NORD_3,fg=$TMUX_NORD_8] "
 TMUX_LEFT_SPLITER="#[bg=default,fg=$TMUX_NORD_3] "
 set -g status-left "$TMUX_LEFT_ICON$TMUX_LEFT_SPLITER"
 
