@@ -17,7 +17,6 @@ cp tmux/.tmux.conf ~/
 
 ## Keys
 
-```text
 * prefix:                <kbd>Ctrl-a</kbd>
 * next window:           <kbd>Ctrl-l</kbd>
 * previous window:       <kbd>Ctrl-h</kbd>
@@ -31,7 +30,7 @@ cp tmux/.tmux.conf ~/
 * toggle scrolling:      <kbd>Prefix [</kbd>
 * copy mode:             <kbd>Prefix Enter</kbd>
 * switch to last window: <kbd>Prefix Tab</kbd>
-```
+* swap panel:            <kbd>Prefix < or ></kbd>
 
 ## Credit
 
