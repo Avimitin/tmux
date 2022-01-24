@@ -104,8 +104,8 @@ bind - split-window -v -c "#{pane_current_path}"
 bind | split-window -h -c "#{pane_current_path}"
 
 # pane navigation
-bind -n S-right select-pane -t :.+
-bind -n S-left select-pane -t :.-
+bind -n M-h select-pane -t :.+
+bind -n M-l select-pane -t :.-
 
 bind -r h select-pane -L  # move left
 bind -r j select-pane -D  # move down
@@ -127,8 +127,8 @@ bind Tab last-window        # move to last active window
 
 # Copied from https://github.com/reorx/dotfiles/blob/master/tmux.conf#L22
 # navigate windows
-bind -n C-right next-window
-bind -n C-left previous-window
+bind -n C-h next-window
+bind -n C-l previous-window
 
 # toggle mouse
 set -g mouse "on"
