@@ -40,6 +40,7 @@ TMUX_NORD_3="#4C566A"
 TMUX_NORD_4="#d8dee9"
 TMUX_NORD_8="#88C0D0"
 TMUX_NORD_10="#5e81ac"
+TMUX_NORD_14="#a3be8c"
 
 set -g status-bg "$TMUX_NORD_1"
 set -g status-fg "$TMUX_NORD_8"
@@ -66,8 +67,8 @@ TMUX_RIGHT_SPLITER="#[bg=default,fg=$TMUX_NORD_3]"
 TMUX_RIGHT_FORMAT="#[bg=$TMUX_NORD_3,fg=$TMUX_NORD_8] #S "
 set -g status-right "$TMUX_RIGHT_SPLITER$TMUX_RIGHT_FORMAT"
 
-set -g pane-border-style "fg=$TMUX_NORD_1"
-set -g pane-active-border-style "fg=$TMUX_NORD_8"
+set -g pane-border-style "fg=$TMUX_NORD_2"
+set -g pane-active-border-style "fg=$TMUX_NORD_14"
 
 # -- display -------------------------------------------------------------------
 
