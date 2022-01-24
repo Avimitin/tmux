@@ -1,8 +1,5 @@
 # tmux
 
-*Default theme*
-![screenshot](./tmux-screenshot.png)
-
 *Nord theme*
 ![screenshot](./tmux-nord.png)
 
@@ -16,25 +13,24 @@ Then clone the repo and copy the config file to your home path.
 ```bash
 git clone https://github.com/Avimitin/tmux
 cp tmux/.tmux.conf ~/
-# if you want the Nord Theme
-cp tmux/.tmux.conf.nord ~/.tmux.conf
 ```
 
 ## Keys
 
 ```text
-* prefix:                <Ctrl-a>
-* next window:           <Ctrl-Right>
-* previous window:       <Ctrl-Left>
-* move next:             <prefix>l
-* move previous:         <prefix>h
-* move up:               <prefix>k
-* move down:             <prefix>j
-* new session:           <prefix><Ctrl-c>
-* split horizontal pane: <prefix>_
-* split vertical pane:   <prefix>-
-* toggle mouse:          <prefix>m
-* copy mode:             <prefix>Enter
+* prefix:                <kbd>Ctrl-a</kbd>
+* next window:           <kbd>Ctrl-l</kbd>
+* previous window:       <kbd>Ctrl-h</kbd>
+* move next:             <kbd>Alt-l</kbd>
+* move previous:         <kbd>Alt-h</kbd>
+* move up:               <kbd>Prefix k</kbd>
+* move down:             <kbd>Prefix j</kbd>
+* new window:            <kbd>Prefix Ctrl-c</kbd> 
+* split horizontal pane: <kbd>Prefix -</kbd>
+* split vertical pane:   <kbd>Prefix |</kbd>
+* toggle scrolling:      <kbd>Prefix [</kbd>
+* copy mode:             <kbd>Prefix Enter</kbd>
+* switch to last window: <kbd>Prefix Tab</kbd>
 ```
 
 ## Credit
@@ -47,6 +43,9 @@ Some setting is copied from
 
 Colorscheme is inspired by
 [wfxr/tmux-power](https://github.com/wfxr/tmux-power).
+
+Nord Colorscheme is copied from:
+[nordtheme](https://www.nordtheme.com/docs/colors-and-palettes)
 
 ## License
 
