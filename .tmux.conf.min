@@ -34,22 +34,15 @@ bind r source-file ~/.tmux.conf \; display '~/.tmux.conf sourced'
 # -- customize -- #
 # -- basic -- #
 # Name convention is from: https://www.nordtheme.com/docs/colors-and-palettes
-TMUX_NORD_1="#23272e"
-TMUX_NORD_2="#3b4252"
-TMUX_NORD_3="#4C566A"
-TMUX_NORD_4="#d8dee9"
-TMUX_NORD_8="#88C0D0"
-TMUX_NORD_10="#5e81ac"
-TMUX_NORD_14="#a3be8c"
-
 TMUX_BACKGROUND="#23272E"
+TMUX_DARK="#282C34"
 TMUX_GRAY="#5c6370"
 TMUX_BLUE="#4aa5f0"
 TMUX_RED="#E46879"
 TMUX_GREEN="#98C379"
 
-set -g status-bg "$TMUX_NORD_1"
-set -g status-fg "$TMUX_NORD_8"
+set -g status-bg "$TMUX_BACKGROUND"
+set -g status-fg "$TMUX_GREEN"
 set -g status-justify left
 
 # -- status left -- #
@@ -58,11 +51,15 @@ set -g status-left-length 33
 set -g window-status-format "#[bg=$TMUX_BACKGROUND,fg=$TMUX_GRAY] #I #W "
 set -g window-status-current-format "#[fg=$TMUX_BLUE] #I #W "
 
-set -g window-status-bell-style bg=default,fg=default,underscore
+set -g window-status-bell-style "#[bg=default,fg=default,underscore]"
 set -g window-status-activity-style bg=default,fg=default,underscore
 
-TMUX_LEFT_ICON="#[fg=$TMUX_RED] #S ⮚  "
+set -g status-left-style bg=$TMUX_DARK,fg=default,none
+TMUX_LEFT_ICON="#[fg=$TMUX_RED] 🞒 #S #[fg=$TMUX_GRAY]❱ "
 set -g status-left "$TMUX_LEFT_ICON"
+
+set -g status-right-style bg=$TMUX_GREEN,fg=$TMUX_DARK,none
+set -g status-right " ⥁ %H:%M "
 
 set -g pane-border-style "fg=$TMUX_NORD_2"
 set -g pane-active-border-style "fg=$TMUX_NORD_14"
@@ -90,15 +87,15 @@ set -g visual-activity off
 # -- navigation ----------------------------------------------------------------
 
 # create session
-bind C-c new-session
+bind C-c command-prompt -I "new -s "
 
 # find session
-bind C-f run 'cut -c3- ~/.tmux.conf | sh -s _switch_session'
+bind f run 'cut -c3- ~/.tmux.conf | sh -s _switch_session'
 
 # split current window horizontally
 bind - split-window -v -c "#{pane_current_path}"
 # split current window vertically
-bind | split-window -h -c "#{pane_current_path}"
+bind _ split-window -h -c "#{pane_current_path}"
 
 # pane navigation
 bind -n M-h select-pane -t :.+
