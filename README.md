@@ -1,7 +1,10 @@
 # tmux
 
 *Nord theme*
-![screenshot](./tmux-nord.png)
+![screenshot](./screenshot.png)
+
+*No nerdfont version*
+![unicode](./tmux-unicode.png)
 
 ## Install
 
@@ -12,7 +15,12 @@ Then clone the repo and copy the config file to your home path.
 
 ```bash
 git clone https://github.com/Avimitin/tmux
+
+# nord theme with nerd font ver
 cp tmux/.tmux.conf ~/
+
+# no nerd font version
+cp tmux/.tmux.conf.min ~/.tmux.conf
 ```
 
 ## Keys
@@ -26,7 +34,7 @@ cp tmux/.tmux.conf ~/
 * move down:             <kbd>Prefix j</kbd>
 * new window:            <kbd>Prefix Ctrl-c</kbd> 
 * split horizontal pane: <kbd>Prefix -</kbd>
-* split vertical pane:   <kbd>Prefix |</kbd>
+* split vertical pane:   <kbd>Prefix _ </kbd>
 * toggle scrolling:      <kbd>Prefix [</kbd>
 * copy mode:             <kbd>Prefix Enter</kbd>
 * switch to last window: <kbd>Prefix Tab</kbd>
