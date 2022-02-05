@@ -59,7 +59,7 @@ TMUX_LEFT_ICON="#[fg=$TMUX_RED] 🞒 #S #[fg=$TMUX_GRAY]❱ "
 set -g status-left "$TMUX_LEFT_ICON"
 
 set -g status-right-style bg=$TMUX_GREEN,fg=$TMUX_DARK,none
-set -g status-right " ⥁ %H:%M "
+set -g status-right " #{?client_prefix,▭ ,}⥁ %H:%M "
 
 set -g pane-border-style "fg=$TMUX_NORD_2"
 set -g pane-active-border-style "fg=$TMUX_NORD_14"
