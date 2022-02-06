@@ -40,6 +40,7 @@ TMUX_GRAY="#5c6370"
 TMUX_BLUE="#4aa5f0"
 TMUX_RED="#E46879"
 TMUX_GREEN="#98C379"
+TMUX_YELLOW="#EBD09C"
 
 set -g status-bg "$TMUX_BACKGROUND"
 set -g status-fg "$TMUX_GREEN"
@@ -51,7 +52,7 @@ set -g status-left-length 33
 set -g window-status-format "#[bg=$TMUX_BACKGROUND,fg=$TMUX_GRAY] #I #W "
 set -g window-status-current-format "#[fg=$TMUX_BLUE] #I #W "
 
-set -g window-status-bell-style "#[bg=default,fg=default,underscore]"
+set -g window-status-bell-style bg=default,fg=default,underscore
 set -g window-status-activity-style bg=default,fg=default,underscore
 
 set -g status-left-style bg=$TMUX_DARK,fg=default,none
@@ -61,8 +62,8 @@ set -g status-left "$TMUX_LEFT_ICON"
 set -g status-right-style bg=$TMUX_GREEN,fg=$TMUX_DARK,none
 set -g status-right " #{?client_prefix,▭ ,}⥁ %H:%M "
 
-set -g pane-border-style "fg=$TMUX_NORD_2"
-set -g pane-active-border-style "fg=$TMUX_NORD_14"
+set -g pane-border-style fg=$TMUX_YELLOW
+set -g pane-active-border-style fg=$TMUX_DARK
 
 # -- display -------------------------------------------------------------------
 
