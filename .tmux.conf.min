@@ -122,8 +122,8 @@ bind Tab last-window        # move to last active window
 
 # Copied from https://github.com/reorx/dotfiles/blob/master/tmux.conf#L22
 # navigate windows
-bind -n C-h next-window
-bind -n C-l previous-window
+bind -n C-l next-window
+bind -n C-h previous-window
 
 # toggle mouse
 set -g mouse "on"
