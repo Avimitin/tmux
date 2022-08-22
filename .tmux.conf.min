@@ -57,11 +57,11 @@ set -g window-status-current-format "#[fg=$TMUX_BLUE] #I #W "
 set -g window-status-bell-style bg=default,fg=default,underscore
 set -g window-status-activity-style bg=default,fg=default,underscore
 
-set -g status-left-style bg=$TMUX_DARK,fg=default,none
-TMUX_LEFT_ICON="#[fg=$TMUX_RED] 🗗 #S #{?client_prefix, #[fg=$TMUX_YELLOW]⌨ ,}#{?mouse, #[fg=$TMUX_YELLOW]🖰 ,}#[fg=$TMUX_GRAY]❱ "
-set -g status-left "$TMUX_LEFT_ICON"
+set -g status-right-style bg=$TMUX_DARK,fg=default,none
+TMUX_RIGHT_ICON="#{?client_prefix, #[fg=$TMUX_YELLOW]⌨ ,}#{?mouse, #[fg=$TMUX_GRAY]🖰,}#[fg=$TMUX_RED] 🗗 #S "
+set -g status-right "$TMUX_RIGHT_ICON"
 
-set -g status-right ""
+set -g status-left "#[fg=$TMUX_GRAY]❱"
 
 set -g pane-border-style fg=$TMUX_YELLOW
 set -g pane-active-border-style fg=$TMUX_DARK
